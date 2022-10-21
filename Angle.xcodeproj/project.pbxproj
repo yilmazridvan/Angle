@@ -17,6 +17,13 @@
 		CC22749A290174A900DF4023 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CC227499290174A900DF4023 /* FirebaseStorage */; };
 		CC22749E2901786D00DF4023 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC22749D2901786D00DF4023 /* LoginViewController.swift */; };
 		CC2274A029017B1300DF4023 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC22749F29017B1300DF4023 /* Login.storyboard */; };
+		CC2274A329019D6D00DF4023 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2274A229019D6D00DF4023 /* SignInViewController.swift */; };
+		CC2274A529019D8000DF4023 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2274A429019D8000DF4023 /* SignUpViewController.swift */; };
+		CC2274A72902C11F00DF4023 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2274A62902C11F00DF4023 /* LoginViewModel.swift */; };
+		CC2274AA2902C26900DF4023 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2274A92902C26900DF4023 /* LoginResponseModel.swift */; };
+		CC2274AE2902C33D00DF4023 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2274AD2902C33D00DF4023 /* SignIn.storyboard */; };
+		CC2274B22902C44400DF4023 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2274B12902C44400DF4023 /* SignUp.storyboard */; };
+		CC2274B42902C7DA00DF4023 /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2274B32902C7DA00DF4023 /* ObservableObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,13 @@
 		CC227492290173CF00DF4023 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CC22749D2901786D00DF4023 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC22749F29017B1300DF4023 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		CC2274A229019D6D00DF4023 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CC2274A429019D8000DF4023 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CC2274A62902C11F00DF4023 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CC2274A92902C26900DF4023 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
+		CC2274AD2902C33D00DF4023 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		CC2274B12902C44400DF4023 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		CC2274B32902C7DA00DF4023 /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				CC22749B2901755800DF4023 /* Application */,
+				CC2274A1290192F800DF4023 /* Modules */,
+				CC2274B32902C7DA00DF4023 /* ObservableObject.swift */,
 				CC2274872901733500DF4023 /* Assets.xcassets */,
 				CC2274892901733500DF4023 /* LaunchScreen.storyboard */,
 				CC22748C2901733500DF4023 /* Info.plist */,
@@ -78,7 +94,6 @@
 			children = (
 				CC22747E2901733500DF4023 /* AppDelegate.swift */,
 				CC2274802901733500DF4023 /* SceneDelegate.swift */,
-				CC22749C2901785500DF4023 /* Login */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -87,9 +102,47 @@
 			isa = PBXGroup;
 			children = (
 				CC22749D2901786D00DF4023 /* LoginViewController.swift */,
+				CC2274A62902C11F00DF4023 /* LoginViewModel.swift */,
 				CC22749F29017B1300DF4023 /* Login.storyboard */,
+				CC2274A82902C24900DF4023 /* Entities */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		CC2274A1290192F800DF4023 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CC2274AC2902C2C900DF4023 /* SignUp */,
+				CC2274AB2902C2C000DF4023 /* SignIn */,
+				CC22749C2901785500DF4023 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CC2274A82902C24900DF4023 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CC2274A92902C26900DF4023 /* LoginResponseModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CC2274AB2902C2C000DF4023 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				CC2274A229019D6D00DF4023 /* SignInViewController.swift */,
+				CC2274AD2902C33D00DF4023 /* SignIn.storyboard */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		CC2274AC2902C2C900DF4023 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CC2274A429019D8000DF4023 /* SignUpViewController.swift */,
+				CC2274B12902C44400DF4023 /* SignUp.storyboard */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +212,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2274A029017B1300DF4023 /* Login.storyboard in Resources */,
+				CC2274AE2902C33D00DF4023 /* SignIn.storyboard in Resources */,
+				CC2274B22902C44400DF4023 /* SignUp.storyboard in Resources */,
 				CC22748B2901733500DF4023 /* LaunchScreen.storyboard in Resources */,
 				CC227493290173D000DF4023 /* GoogleService-Info.plist in Resources */,
 				CC2274882901733500DF4023 /* Assets.xcassets in Resources */,
@@ -172,9 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2274A329019D6D00DF4023 /* SignInViewController.swift in Sources */,
+				CC2274AA2902C26900DF4023 /* LoginResponseModel.swift in Sources */,
 				CC22749E2901786D00DF4023 /* LoginViewController.swift in Sources */,
+				CC2274A72902C11F00DF4023 /* LoginViewModel.swift in Sources */,
 				CC22747F2901733500DF4023 /* AppDelegate.swift in Sources */,
+				CC2274B42902C7DA00DF4023 /* ObservableObject.swift in Sources */,
 				CC2274812901733500DF4023 /* SceneDelegate.swift in Sources */,
+				CC2274A529019D8000DF4023 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
